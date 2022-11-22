@@ -16,8 +16,8 @@ Gem::Specification.new do |s|
 
   # Special flag to let us know this is actually a logstash plugin
   s.metadata = { "logstash_plugin" => "true", "logstash_group" => "output" }
-
-  s.requirements << "jar 'com.microsoft.azure.sdk.iot:iot-device-client', '1.0.17'"
+                          
+  s.requirements << "jar 'com.microsoft.azure.sdk.iot:iot-device-client', '1.30.1'"
   s.add_development_dependency 'jar-dependencies'
 
   # Gem dependencies
