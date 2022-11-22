@@ -19,7 +19,7 @@ Please see below example.
 
 ```ruby
 output {
-  iothub {
+  json-iothub {
     connection_string => "{set your iot hub connection string}"
   }
 }
@@ -81,7 +81,7 @@ bin/logstash-plugin install --no-verify
 ```
 - Run Logstash with your plugin
 ```sh
-bin/logstash -e 'output {iothub {connection_string => "<conn_str>"}}'
+bin/logstash -e 'output {json-iothub {connection_string => "<conn_str>"}}'
 ```
 At this point any modifications to the plugin code will be applied to this local Logstash setup. After modifying the plugin, simply rerun Logstash.
 
